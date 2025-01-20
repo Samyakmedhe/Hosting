@@ -1,0 +1,32 @@
+.gallery {
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .gallery h1 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #ff69b4;
+  }
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5em;
+    margin: 0 auto;
+    max-width: 400px; /* Limit the gallery's width */
+  }
+  
+  .images img {
+    width: 100%; /* Ensures the image fits its container */
+    max-width: 100px; /* Limits image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .images img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body, html {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            height: 100%;
+            overflow-y: auto;
+        }
+        video.background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        nav {
+            background-color: rgba(233, 170, 62, 0);
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(225, 80, 174);
+            font-weight: bold;
+            font-size: 2.2em;
+            text-shadow: 2px 2px #e4e4e4;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd90000;
+        }
+        header {
+            margin: 2em 0;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            font-size: 4em;
+            color: #ddd5d900;
+            text-shadow: 2px 2px #dfd8da;
+        }
+        header p {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .gallery {
+            margin: 2em auto;
+            max-width: 1000px;
+            padding: 1.5em;
+            background-color: transparent;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery h1 {
+            font-size: 2.5em;
+            color: #ffc40000;
+            margin-bottom: 1em;
+            text-shadow: 2px 2px #f1efef;
+        }
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5em;
+            width: 100%;
+            max-width: 1200px;
+            padding: 1em;
+        }
+        .gallery-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin: 2em 0;
+            font-size: 0.9em;
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1em;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="assets/6911634-uhd_2160_3840_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag. Please update to a modern browser to enjoy the experience.
+    </video>
+    <audio id="background-music" autoplay loop>
+        <source src="assets/WhatsApp Video 2025-01-03 at 16.37.31.mp3" type="audio/mp3">
+        Your browser does not support the audio element. Please update to a modern browser to enjoy the music.
+    </audio>
+    <nav>
+        <a href="#home">Home</a>
+       
+    </nav>
+
+    <div class="gallery" id="images">
+        
+        <div class="gallery-images">
+            <img src="assets/IMG_4139.jpg" alt="Image 1">
+            <img src="assets/IMG_4151.jpg" alt="Image 4">
+            <img src="assets/IMG_4146.jpg" alt="Image 4">
+            <img src="assets/IMG_0701.jpg" alt="Image 4">
+            <img src="assets/347C0AF5-C55D-4391-8F67-C7A77916B41B_1_105_c.jpeg" alt="Image 2">
+            <img src="assets/IMG_2222.jpg" alt="Image 3">
+            <img src="assets/WhatsApp Image 2025-01-20 at 19.22.37.jpg" alt="Image 4">
+            <img src="assets/IMG_0720.jpg" alt="Image 5">
+            <img src="assets/IMG_1367.jpg" alt="Image 6">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Created with endless love, just for you. 💖</p>
+    </footer>
+
+    <script>
+        const video = document.querySelector('.background-video');
+        video.playbackRate = 0.5;
+      
+    </script>
+</body>
+</html>

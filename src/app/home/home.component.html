@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+        video.background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        nav {
+            background-color: rgba(124, 63, 23, 0.848);
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            box-shadow: 0 4px 6px rgba(224, 216, 216, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        header {
+            margin: 2em 0;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            font-size: 4em;
+            color: #fffdff;
+            text-shadow: 2px 2px #e4e4e4;
+        }
+        header p {
+            font-size: 1.5em;
+            color: hsl(48, 60%, 48%);
+        }
+        .section {
+            margin: 2em auto;
+            max-width: 800px;
+            padding: 1.5em;
+            border: 2px solid #f80505f2;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0.5em;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(148, 138, 138, 0.1);
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            margin: 2em 0;
+            font-size: 0.9em;
+            color: #555;
+            background-color: rgba(199, 183, 183, 0);
+            padding: 1em;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Play button styling (removed as it is no longer needed) */
+        button {
+            background-color: #ff1493;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="assets/5960426_Cake_Birthday Cake_3840x2160.mp4" type="video/mp4">
+        Your browser does not support the video tag. Please update to a modern browser to enjoy the experience.
+    </video>
+
+    <!-- Audio element with autoplay set to true -->
+    <audio id="background-music" autoplay loop>
+        <source src="assets/happy-birthday-254480.mp3" type="audio/mp3">
+        Your browser does not support the audio element. Please update to a modern browser to enjoy the music.
+    </audio>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Bro</a>
+        <a href="/Child">21 years Journey </a>
+        <a href="/Family">Family</a>
+    </nav>
+
+    <header id="home">
+        <h1>Happy Birthday, My Sister!</h1>
+        <p>Today, we celebrate you—the light of my life and my endless joy!</p>
+    </header>
+
+    <footer>
+        <p>&copy; 2025 Created with endless love, just for you. 💖</p>
+    </footer>
+
+    <script>
+        const video = document.querySelector('.background-video');
+        video.playbackRate = 0.5;
+    </script>
+</body>
+</html>

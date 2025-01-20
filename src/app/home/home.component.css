@@ -1,0 +1,26 @@
+/* src/app/home/home.component.css */
+.home {
+    text-align: center;
+  }
+  
+  nav {
+    background-color: rgba(255, 111, 145, 0.9);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .images img {
+    max-width: 300px;
+    margin: 1em;
+    cursor: pointer;
+  }

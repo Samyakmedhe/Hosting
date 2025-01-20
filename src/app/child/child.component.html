@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+         body, html {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            height: 100%;
+            overflow-y: auto;
+            background-image: url('assets/4E2532A9-CE0C-4585-A0B7-C48423D23F1B_1_201_a.jpg'); /* Replace with your portrait image */
+            background-size: cover; /* Ensures the image covers the viewport completely */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background static */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+        nav {
+            background-color: rgba(251, 247, 248, 0);
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(218, 64, 177);
+            font-weight: bold;
+            font-size: 2.2em;
+            text-shadow: 2px 2px #e4e4e4;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        header {
+            margin: 2em 0;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            font-size: 4em;
+            color: #ddd5d9;
+            text-shadow: 2px 2px #dfd8da;
+        }
+        header p {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .gallery {
+            margin: 2em auto;
+            max-width: 1000px;
+            padding: 1.5em;
+            background-color: transparent;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery h1 {
+            font-size: 2.5em;
+            color: #ffc400;
+            margin-bottom: 1em;
+            text-shadow: 2px 2px #f1efef;
+        }
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5em;
+            width: 100%;
+            max-width: 1200px;
+            padding: 1em;
+        }
+        .gallery-images img {
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+          
+            transition: transform 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+      
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+  
+    <audio id="background-music" autoplay loop>
+        <source src="assets/majhi_sonuli_ringtone.mp3" type="audio/mp3">
+        Your browser does not support the audio element. Please update to a modern browser to enjoy the music.
+    </audio>
+
+    <nav>
+        <a href="#home">Home</a>
+    
+    </nav>
+
+    <div class="gallery" id="images">
+        <h1>Photo Gallery</h1>
+        <div class="gallery-images">
+            <img src="assets/IMG_4137.jpg" alt="Image 1">
+            <img src="assets/IMG_4138.jpg" alt="Image 2">
+            <img src="assets/IMG_4141.jpg" alt="Image 3">
+            <img src="assets/IMG_4134.jpg" alt="Image 2">
+            <img src="assets/IMG_4143.jpg" alt="Image 4">
+            <img src="assets/IMG_4128.jpg" alt="Image 5">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4149.jpg" alt="Image 7">
+            <img src="assets/IMG_4145.jpg" alt="Image 8">
+            <img src="assets/IMG_4144.jpg" alt="Image 6">
+            <img src="assets/IMG_4142.jpg" alt="Image 6">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4148.jpg" alt="Image 6">
+            <img src="assets/IMG_4140.jpg" alt="Image 6">
+            
+            src/assets/IMG_4142.jpg
+        </div>
+    </div>
+
+    
+
+    <script>
+        const video = document.querySelector('.background-video');
+        video.playbackRate = 0.5;
+      
+    </script>
+</body>
+</html>
